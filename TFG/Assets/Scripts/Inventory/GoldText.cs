@@ -10,10 +10,11 @@ public class GoldText : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         goldText = GetComponent<Text>();
-	}
-	
-	// Update is called once per frame
-	void Update () {
+        ChangeGoldText(PlayerStats.MyInstance.gold);
+    }
+
+    // Update is called once per frame
+    void Update () {
 		
 	}
 

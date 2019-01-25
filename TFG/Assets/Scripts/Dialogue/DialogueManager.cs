@@ -61,7 +61,12 @@ public class DialogueManager : MonoBehaviour
         {
             sentences.Enqueue(sentence);
         }
-        DisplayNextSentence();
+
+        if (dialogue.situationalAudio != null)
+        {
+            dialogue.situationalAudio.Play();
+        }
+
         if (dialogue.spamEnemy.enemiesPoint.Count > 0)
         {
             spamEnemy = dialogue.spamEnemy;
@@ -70,11 +75,8 @@ public class DialogueManager : MonoBehaviour
         {
             spamEnemy = null;
         }
-        if(dialogue.situationalAudio != null)
-        {
-            dialogue.situationalAudio.Play();
-        }
 
+        DisplayNextSentence();
     }
 
     public void DisplayNextSentence()

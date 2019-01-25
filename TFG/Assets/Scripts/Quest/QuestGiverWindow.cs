@@ -113,14 +113,14 @@ public class QuestGiverWindow : Window {
         }
         if (quest.MyReward.MyGold != 0)
         {
-            reward += "Gold: " + quest.MyReward.MyGold + "\n";
+            reward += "Oro: " + quest.MyReward.MyGold + "\n";
         }
         if (quest.MyReward.MyExp != 0)
         {
             reward += "Exp: " + quest.MyReward.MyExp + "\n";
         }
 
-        questDescription.GetComponent<Text>().text = string.Format("<b>{0}</b>\n<size=12>{1}</size>\n\nReward\n<size=12>{2}</size>", quest.MyTitle, quest.MyDescription,reward);
+        questDescription.GetComponent<Text>().text = string.Format("<b>{0}</b>\n<size=12>{1}</size>\n\nRecompensa\n<size=12>{2}</size>", quest.MyTitle, quest.MyDescription,reward);
     }
 
     public void Back()

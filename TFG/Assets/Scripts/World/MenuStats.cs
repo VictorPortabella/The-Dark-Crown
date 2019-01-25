@@ -187,7 +187,7 @@ public class MenuStats : MonoBehaviour {
         {
             goldOutGame -= goldToHealth;
             goldToHealth *= 2;
-            totalHealthOutGame += ((int)Mathf.RoundToInt(totalHealthOutGame * 1.1f));
+            totalHealthOutGame = ((int)Mathf.RoundToInt(totalHealthOutGame * 1.1f));
             MenuManager.MyInstance.BuyHealth();
             correctBuy.Play();
         }
@@ -203,7 +203,7 @@ public class MenuStats : MonoBehaviour {
         {
             goldOutGame -= goldToStamina;
             goldToStamina *= 2;
-            totalStaminaOutGame += ((int)Mathf.RoundToInt(totalStaminaOutGame * 1.1f)); 
+            totalStaminaOutGame = ((int)Mathf.RoundToInt(totalStaminaOutGame * 1.1f)); 
             MenuManager.MyInstance.BuyStamina();
             correctBuy.Play();
         }
@@ -219,7 +219,7 @@ public class MenuStats : MonoBehaviour {
         {
             goldOutGame -= goldToattackDamage;
             goldToattackDamage *= 2;
-            attackDamageOutGame += ((int)Mathf.RoundToInt(attackDamageOutGame * 1.1f));
+            attackDamageOutGame = ((int)Mathf.RoundToInt(attackDamageOutGame * 1.1f));
             MenuManager.MyInstance.BuyAttack();
             correctBuy.Play();
         }
@@ -231,7 +231,7 @@ public class MenuStats : MonoBehaviour {
 
     public void GoldToGoldOutgame(int gold)
     {
-        goldOutGame += gold;
+        goldOutGame = gold;
     }
 
     public void BuyExtraLife()

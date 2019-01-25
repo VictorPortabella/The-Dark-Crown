@@ -157,7 +157,6 @@ public class PlayerHealth : MonoBehaviour {
         playerMovement.enabled = false;
         playerAttacking.enabled = false;
 
-        MenuStats.MyInstance.GoldToGoldOutgame(playerStats.gold);
         if(Inventory.MyInstance.bagIsClose == false)
         {
             Inventory.MyInstance.OpenClose();

@@ -100,14 +100,14 @@ public class Questlog : MonoBehaviour {
             }
             if (quest.MyReward.MyGold != 0)
             {
-                reward += "Gold: " + quest.MyReward.MyGold + "\n";
+                reward += "Oro: " + quest.MyReward.MyGold + "\n";
             }
             if (quest.MyReward.MyExp != 0)
             {
                 reward += "Exp: " + quest.MyReward.MyExp + "\n";
             }
 
-            questDescription.text = string.Format("<b>{0}</b>\n<size=10>{1}</size>\n\nObjectives\n<size=10>{2}</size>\nReward\n<size=10>{3}</size>", title, quest.MyDescription, objectives,reward);
+            questDescription.text = string.Format("<b>{0}</b>\n<size=10>{1}</size>\n\nObjectivos\n<size=10>{2}</size>\nRecompensa\n<size=10>{3}</size>", title, quest.MyDescription, objectives,reward);
         }
     }
 

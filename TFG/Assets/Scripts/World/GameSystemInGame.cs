@@ -40,10 +40,12 @@ public class GameSystemInGame : MonoBehaviour {
     {
         if(scene == "Scene 2")
         {
+            MenuStats.MyInstance.GoldToGoldOutgame(PlayerStats.MyInstance.gold);
             ChangeSceneAnimationScene2();
         }
         if (scene == "SceneInterfaz")
         {
+            MenuStats.MyInstance.GoldToGoldOutgame(PlayerStats.MyInstance.gold);
             ChangeSceneAnimationInterfaz();
         }
         if(scene == "SceneFinal")

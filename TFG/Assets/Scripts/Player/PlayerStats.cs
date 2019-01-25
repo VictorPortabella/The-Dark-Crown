@@ -79,11 +79,11 @@ public class PlayerStats : MonoBehaviour {
             staminaRegeneration = MenuStats.MyInstance.StaminaRecover;
             xpSlider.fillAmount = 0;
             //Gold
-            gold = 0;            
+            gold = MenuStats.MyInstance.GoldOutGame;
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    // Update is called once per frame
+    void Update () {
         if(effect != null)
         {
             effect.transform.position = this.transform.position;

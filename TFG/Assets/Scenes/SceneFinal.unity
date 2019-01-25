@@ -246,7 +246,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: to be continue >>
+  m_Text: "continuar\xE1 >>"
 --- !u!222 &678447931
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -862,7 +862,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: COMING SOON...
+  m_Text: "PR\xD3XIMAMENTE..."
 --- !u!222 &1928156671
 CanvasRenderer:
   m_ObjectHideFlags: 0
